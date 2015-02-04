@@ -1,0 +1,179 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cgpa.S6Activity"
+    tools:ignore="MergeRootFrame" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+     >
+  <TextView
+        android:id="@+id/DAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design and Analysis of Algorithm"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/DAAmarks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/DAA"
+      android:ems="10"
+      android:inputType="number" >
+
+      <requestFocus />
+  </EditText>
+
+  <TextView
+      android:id="@+id/IC"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/DAAmarks"
+      android:text="Internet Computing"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/ICmarks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/IC"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/SS"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/ICmarks"
+      android:text="System Software"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/SSmarks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/SS"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/CN"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/SSmarks"
+      android:text="Computer Networks"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/CNmarks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/CN"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/SE"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/CNmarks"
+      android:text="Software Engineering"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/SEmarks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/SE"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/Elec"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/SEmarks"
+      android:text="Elective I"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/Elecmarks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/Elec"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/OSlab"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/Elecmarks"
+      android:text="Operating Systems Lab"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/OSLabmarks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/OSlab"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/miniproj"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/OSLabmarks"
+      android:text="Mini Project"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/miniprojmarks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/miniproj"
+      android:ems="10"
+      android:inputType="number" />
+
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/OSLabmarks"
+      android:layout_alignBottom="@+id/OSLabmarks"
+      android:layout_alignParentRight="true"
+      android:text="Submit"
+      android:onClick="calculate" />
+
+  <EditText
+      android:id="@+id/sgpa"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/button1"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:ems="10"
+      android:inputType="number" />
+
+</RelativeLayout>
+</ScrollView>
+

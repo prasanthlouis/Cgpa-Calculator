@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cgpa.Sgpacalc"
+    tools:ignore="MergeRootFrame" >
+
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:text="Button"
+      android:onClick="back" />
+
+  <TextView
+      android:id="@+id/S6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:text="S6"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  <EditText
+      android:id="@+id/S6marks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/S5marks"
+      android:layout_alignTop="@+id/S6"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/S5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/S6"
+      android:layout_alignParentLeft="true"
+      android:layout_marginBottom="31dp"
+      android:text="S5"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <EditText
+      android:id="@+id/S5marks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/S4marks"
+      android:layout_alignTop="@+id/S5"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/S4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/S5"
+      android:layout_alignParentLeft="true"
+      android:layout_marginBottom="48dp"
+      android:text="S4"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <EditText
+      android:id="@+id/S4marks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/S4"
+      android:layout_centerHorizontal="true"
+      android:ems="10"
+      android:inputType="number" />
+
+  <TextView
+      android:id="@+id/S1S2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:text="S1S2"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <EditText
+      android:id="@+id/S1S2marks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:ems="10"
+      android:inputType="number" />
+
+</RelativeLayout>
+

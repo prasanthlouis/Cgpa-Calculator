@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cgpa"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.example.cgpa.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.cgpa.MainScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cgpa.MainActivity"
+            android:label="@string/title_activity_main_screen" >
+        </activity>
+        <activity
+            android:name="com.example.cgpa.S4Activity"
+            android:label="@string/title_activity_s4" >
+        </activity>
+        <activity
+            android:name="com.example.cgpa.S6Activity"
+            android:label="@string/title_activity_s6" >
+        </activity>
+        <activity
+            android:name="com.example.cgpa.S3Activity"
+            android:label="@string/title_activity_s3" >
+        </activity>
+        <activity
+            android:name="com.example.cgpa.Sgpacalc"
+            android:label="@string/title_activity_sgpacalc" >
+        </activity>
+        <activity
+            android:name="com.example.cgpa.S1S2Activity"
+            android:label="@string/title_activity_s1_s2" >
+        </activity>
+    </application>
+
+</manifest>

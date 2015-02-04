@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cgpa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="title_activity_s4">S4Activity</string>
+    <string name="title_activity_s6">S6Activity</string>
+    <string name="title_activity_s3">S3Activity</string>
+    <string name="title_activity_sgpacalc">Sgpacalc</string>
+    <string name="title_activity_s1_s2">S1S2Activity</string>
+
+</resources>
