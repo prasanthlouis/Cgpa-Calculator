@@ -61,7 +61,7 @@ public class S1S2Activity extends ActionBarActivity {
 		mechwork=(EditText)findViewById(R.id.mechworkmarks);
 		eleccivilwork=(EditText)findViewById(R.id.elecandcivilmarks);
 		temp=(4*(grade(engphy)+grade(engchem)+grade(civileng)+grade(mecheng)+grade(eleceng)))+5*(grade(em1)+grade(elecsiteng))+6*(grade(engmech)+grade(enggraph))+1*(grade(mechwork)+grade(eleccivilwork));
-		sgpa=temp/28;
+		sgpa=temp/44;
 	//	sgpatext.setText(sgpa+"");
 	Intent myintent=new Intent(S1S2Activity.this, Sgpacalc.class).putExtra("S1S2marks", sgpa);
 		startActivity(myintent);

@@ -6,15 +6,30 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 
 public class MainScreen extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+	    getActionBar().hide();
 		setContentView(R.layout.activity_main_screen);
 
 	
+	}
+	public void S8(View v)
+	{
+		Intent myIntent=new Intent(MainScreen.this,S8Activity.class);
+		startActivity(myIntent);
+	}
+	
+	
+	public void S7(View v)
+	{
+		Intent myIntent=new Intent(MainScreen.this,S7Activity.class);
+		startActivity(myIntent);
 	}
 	
 	public void S6(View v)
@@ -32,6 +47,12 @@ public class MainScreen extends ActionBarActivity {
 	public void S4(View v)
 	{
 		Intent myIntent=new Intent(MainScreen.this,S4Activity.class);
+		startActivity(myIntent);
+	}
+	
+	public void S3(View v)
+	{
+		Intent myIntent=new Intent(MainScreen.this,S3Activity.class);
 		startActivity(myIntent);
 	}
 	

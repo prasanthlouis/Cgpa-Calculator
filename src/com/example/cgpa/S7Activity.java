@@ -14,17 +14,17 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.os.Build;
 
-public class S3Activity extends ActionBarActivity {
-	EditText emII,ecskills,pscp,co,stld,edc,pgmlab,ldlab,sgpatext;
+public class S7Activity extends ActionBarActivity {
+	EditText wt,cc,cg,oomd,ppl,elecII,syspgmlab,networkinglab,sgpatext,seminar,mainproj;
 	float sgpa,temp;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_s3);
+		setContentView(R.layout.activity_s7);
 
-	
+		
 	}
-
+	
 	public float grade(EditText x)
 	{
 		int y=Integer.parseInt(x.getText().toString());
@@ -44,24 +44,26 @@ public class S3Activity extends ActionBarActivity {
 			return 0;
 		
 	}
+
 	
 	public void calculate(View v)
 	{
 		Toast.makeText(getApplicationContext(), "Calculating", Toast.LENGTH_SHORT).show();
 		//sgpatext=(EditText)findViewById(R.id.sgpa);
-		emII=(EditText)findViewById(R.id.emIImarks);
-		ecskills=(EditText)findViewById(R.id.Economicsmarks);
-		pscp=(EditText)findViewById(R.id.PSCPmarks);
-		co=(EditText)findViewById(R.id.COmarks);
-		stld=(EditText)findViewById(R.id.STLDmarks);
-		edc=(EditText)findViewById(R.id.EDCmarks);
-		pgmlab=(EditText)findViewById(R.id.Programminglabmarks);
-		ldlab=(EditText)findViewById(R.id.LogicDesignlabmarks);
-		temp=(4*(grade(emII)+grade(ecskills)+grade(pscp)+grade(co)+grade(stld)+grade(edc)))+2*(grade(pgmlab)+grade(ldlab));
+		wt=(EditText)findViewById(R.id.WTmarks);
+		cc=(EditText)findViewById(R.id.CCmarks);
+		cg=(EditText)findViewById(R.id.CGmarks);
+		oomd=(EditText)findViewById(R.id.OOMDmarks);
+		ppl=(EditText)findViewById(R.id.PPLmarks);
+		elecII=(EditText)findViewById(R.id.elecIImarks);
+		syspgmlab=(EditText)findViewById(R.id.syspgmlabmarks);
+		networkinglab=(EditText)findViewById(R.id.networklabmarks);
+		seminar=(EditText)findViewById(R.id.seminarmarks);
+		mainproj=(EditText)findViewById(R.id.mainprojmarks);
+		temp=(4*(grade(wt)+grade(cc)+grade(elecII)))+(3*(grade(cg)+grade(oomd)+grade(ppl)))+(2*(grade(syspgmlab)+grade(networkinglab)+grade(seminar)))+(1*(grade(mainproj)));
 		sgpa=temp/28;
-		//Toast.makeText(getApplicationContext(), sgpa+"", Toast.LENGTH_SHORT).show();
 	//	sgpatext.setText(sgpa+"");
-	Intent myintent=new Intent(S3Activity.this, Sgpacalc.class).putExtra("S3marks", sgpa);
+	Intent myintent=new Intent(S7Activity.this, Sgpacalc.class).putExtra("S7marks", sgpa);
 		startActivity(myintent);
 		 
          //Log.d(TAG, "Sending data to status activity intent: " +data);
@@ -69,13 +71,11 @@ public class S3Activity extends ActionBarActivity {
 		
 		
 	}
-
-	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.s3, menu);
+		getMenuInflater().inflate(R.menu.s7, menu);
 		return true;
 	}
 
@@ -94,6 +94,6 @@ public class S3Activity extends ActionBarActivity {
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
-	
+
 
 }

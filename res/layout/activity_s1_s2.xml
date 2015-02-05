@@ -4,21 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.cgpa.S1S2Activity"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame"
+    android:background="#FF3300" >
+
 <RelativeLayout
-     android:layout_width="match_parent"
-    android:layout_height="match_parent">t
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
     
      <TextView
         android:id="@+id/maths1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Engineering Mathematics I"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/maths1marks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/maths1"
@@ -32,11 +34,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/maths1marks"
       android:text="Engineering Physics"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/engphymarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/EngPhy"
@@ -53,11 +55,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engphymarks"
       android:text="Engineering Chemistry"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/engchemmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engchem"
@@ -71,11 +73,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engchemmarks"
       android:text="Engineering Mechanics"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/engmechmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engmech"
@@ -89,11 +91,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engmechmarks"
       android:text="Engineering Graphics"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/enggraphmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/enggraph"
@@ -107,11 +109,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/enggraphmarks"
       android:text="Civil Engineering"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/civilengmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/civileng"
@@ -125,11 +127,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/civilengmarks"
       android:text="Mechanical Engineering"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/mechengmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/mecheng"
@@ -143,11 +145,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/mechengmarks"
       android:text="Electrical Engineering"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/ElectricalEngmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/ElectricalEng"
@@ -161,11 +163,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/ElectricalEngmarks"
       android:text="Electronics and IT"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/ElecsITmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/ElecsIT"
@@ -179,11 +181,11 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/ElecsITmarks"
       android:text="Mechanical Workshop"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/mechworkmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/mechwork"
@@ -197,26 +199,26 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/mechworkmarks"
       android:text="Elec and Civil Workshop"
-      android:textAppearance="?android:attr/textAppearanceSmall" />
+      android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <EditText
       android:id="@+id/elecandcivilmarks"
-      android:layout_width="wrap_content"
+      android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/elecandcivil"
       android:ems="10"
       android:inputType="number" />
 
-  <Button
+  <ImageButton
       android:id="@+id/s1s2button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignBaseline="@+id/enggraph"
-      android:layout_alignBottom="@+id/enggraph"
-      android:layout_alignParentRight="true"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/elecandcivilmarks"
+      android:background="@null"
       android:onClick="calculate"
-      android:text="Calculate" />
+      android:src="@drawable/calc" />
     
 </RelativeLayout>
 </ScrollView>

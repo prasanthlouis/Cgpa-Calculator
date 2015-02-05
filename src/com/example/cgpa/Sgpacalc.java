@@ -11,7 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Sgpacalc extends ActionBarActivity {
-float s1s2mar,s4mar,s5mar,s6mar;
+float s1s2mar,s3mar,s4mar,s5mar,s6mar,s7mar,s8mar;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -27,6 +28,17 @@ float s1s2mar,s4mar,s5mar,s6mar;
 		s1s2mar = ((MyApplication) this.getApplication()).getSomeVariable("s1s2mar");
 		EditText s1s2=(EditText)findViewById(R.id.S1S2marks);
 		s1s2.setText(s1s2mar+"");
+		
+		//s3marks
+		s3mar = extras.getFloat("S3marks");
+		//s4 marks
+		if(s3mar!=0.0)
+		{
+		((MyApplication) this.getApplication()).setSomeVariable(s3mar,"s3mar");
+		}
+		s3mar = ((MyApplication) this.getApplication()).getSomeVariable("s3mar");
+		EditText s3=(EditText)findViewById(R.id.S3marks);
+		s3.setText(s3mar+"");
 		
 		
 		s4mar = extras.getFloat("S4marks");
@@ -61,9 +73,36 @@ float s1s2mar,s4mar,s5mar,s6mar;
 		EditText s6=(EditText)findViewById(R.id.S6marks);
 		s6.setText(s6mar+"");
 		
+		//s7marks
+		s7mar = extras.getFloat("S7marks");
+		if(s7mar!=0.0)
+		{
+		((MyApplication) this.getApplication()).setSomeVariable(s7mar,"s7mar");
+		}
+		s7mar = ((MyApplication) this.getApplication()).getSomeVariable("s7mar");
+		EditText s7=(EditText)findViewById(R.id.S7marks);
+		s7.setText(s7mar+"");
+		
+		//s8marks
+		s8mar = extras.getFloat("S8marks");
+		if(s8mar!=0.0)
+		{
+		((MyApplication) this.getApplication()).setSomeVariable(s8mar,"s8mar");
+		}
+		s8mar = ((MyApplication) this.getApplication()).getSomeVariable("s8mar");
+		EditText s8=(EditText)findViewById(R.id.S8marks);
+		s8.setText(s8mar+"");
+		
+		
 	
 	}
 	
+	public void finalcalc(View v)
+	{
+		float finalcgpa=((44*s1s2mar)+(28*(s3mar+s4mar+s5mar+s6mar+s7mar+s8mar)))/(44+(s3mar>0?28:0)+(s4mar>0?28:0)+(s5mar>0?28:0)+(s6mar>0?28:0)+(s7mar>0?28:0)+(s8mar>0?28:0));
+		EditText finalthankfully=(EditText)findViewById(R.id.CGPAmarks);
+		finalthankfully.setText(finalcgpa+"");
+	}
 	
 	
 	public void back(View v)

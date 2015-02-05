@@ -1,46 +1,47 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:layout_width="wrap_content"
-    android:layout_height="fill_parent"
-    tools:context="com.example.cgpa.S3Activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cgpa.S7Activity"
     tools:ignore="MergeRootFrame" >
-
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="473dp" >
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >
 
     <TextView
-        android:id="@+id/emII"
+        android:id="@+id/WT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Engineering Maths II"
+        android:text="Web Technologies"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/emIImarks"
+        android:id="@+id/WTmarks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/emII"
+        android:layout_below="@+id/WT"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/Economics"
+        android:id="@+id/CC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/emIImarks"
-        android:text="Economics and Comm Skills"
+        android:layout_below="@+id/WTmarks"
+        android:text="Compiler Construction"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/Economicsmarks"
+        android:id="@+id/CCmarks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Economics"
+        android:layout_below="@+id/CC"
         android:ems="10"
         android:inputType="number" >
 
@@ -48,110 +49,146 @@
     </EditText>
 
     <TextView
-        android:id="@+id/PSCP"
+        android:id="@+id/CG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Economicsmarks"
-        android:text="Computer Programming"
+        android:layout_below="@+id/CCmarks"
+        android:text="Computer Graphics"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/PSCPmarks"
+        android:id="@+id/CGmarks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/PSCP"
+        android:layout_below="@+id/CG"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/CO"
+        android:id="@+id/OOMD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/PSCPmarks"
-        android:text="Computer Organization"
+        android:layout_below="@+id/CGmarks"
+        android:text="Modelling Design"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/COmarks"
+        android:id="@+id/OOMDmarks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/CO"
+        android:layout_below="@+id/OOMD"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/STLD"
+        android:id="@+id/PPL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/COmarks"
-        android:text="Switching Theory"
+        android:layout_below="@+id/OOMDmarks"
+        android:text="Principles of Programming Languages"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/STLDmarks"
+        android:id="@+id/PPLmarks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/STLD"
+        android:layout_below="@+id/PPL"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/EDC"
+        android:id="@+id/elecII"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/STLDmarks"
-        android:text="Electronic Devices and Circuits"
+        android:layout_below="@+id/PPLmarks"
+        android:text="Elective II"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/EDCmarks"
+        android:id="@+id/elecIImarks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/EDC"
+        android:layout_below="@+id/elecII"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/Programminglab"
+        android:id="@+id/syspgmlab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/EDCmarks"
-        android:text="Programming Lab"
+        android:layout_below="@+id/elecIImarks"
+        android:text="Systems Programming Lab"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/Programminglabmarks"
+        android:id="@+id/syspgmlabmarks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Programminglab"
+        android:layout_below="@+id/syspgmlab"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/LogicDesignlab"
+        android:id="@+id/networklab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Programminglabmarks"
-        android:text="Logic Design Lab"
+        android:layout_below="@+id/syspgmlabmarks"
+        android:text="Networking Lab"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/LogicDesignlabmarks"
+        android:id="@+id/networklabmarks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/LogicDesignlab"
+        android:layout_below="@+id/networklab"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/seminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/networklabmarks"
+        android:text="Seminar"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/seminarmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seminar"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/mainproj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seminarmarks"
+        android:text="Main Project"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/mainprojmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mainproj"
         android:ems="10"
         android:inputType="number" />
 
@@ -159,11 +196,12 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/LogicDesignlabmarks"
-        android:layout_alignBottom="@+id/LogicDesignlabmarks"
-        android:layout_alignParentRight="true"
-        android:onClick="calculate"
-        android:text="Calculate" />
+        android:layout_alignBaseline="@+id/mainprojmarks"
+        android:layout_alignBottom="@+id/mainprojmarks"
+        android:layout_marginLeft="68dp"
+        android:layout_toRightOf="@+id/syspgmlab"
+        android:text="Calculate"
+        android:onClick="calculate" />
 
 </RelativeLayout>
 </ScrollView>

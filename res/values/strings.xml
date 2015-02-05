@@ -10,5 +10,7 @@
     <string name="title_activity_s3">S3Activity</string>
     <string name="title_activity_sgpacalc">Sgpacalc</string>
     <string name="title_activity_s1_s2">S1S2Activity</string>
+    <string name="title_activity_s7">S7Activity</string>
+    <string name="title_activity_s8">S8Activity</string>
 
 </resources>
