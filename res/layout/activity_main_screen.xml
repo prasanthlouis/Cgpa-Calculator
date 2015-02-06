@@ -5,23 +5,11 @@
     android:layout_height="fill_parent"
     tools:context="com.example.cgpa.MainScreen"
     tools:ignore="MergeRootFrame"
-    android:background="#FF3300" >
+    android:background="@drawable/androidback" >
     
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="690dp" >
-
-
-
-    <ImageButton
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button2"
-        android:background="@null"
-        android:onClick="S6"
-        android:src="@drawable/simple5" />
 
     <ImageButton
         android:id="@+id/button4"
@@ -70,17 +58,40 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/button3"
         android:background="@null"
+        android:onClick="S7"
         android:src="@drawable/simple6" />
 
     <ImageButton
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
         android:background="@null"
         android:onClick="S8"
         android:src="@drawable/simple7" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:background="@null"
+        android:onClick="S6"
+        android:src="@drawable/simple5" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:onClick="jumpstart"
+        android:src="@drawable/cgpabut" />
 
 </RelativeLayout>
 </ScrollView>

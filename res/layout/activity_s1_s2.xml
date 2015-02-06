@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.cgpa.S1S2Activity"
     tools:ignore="MergeRootFrame"
-    android:background="#FF3300" >
+    android:background="@drawable/androidback"
+     >
 
 <RelativeLayout
     android:layout_width="match_parent"
@@ -16,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Engineering Mathematics I"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
 
   <EditText
       android:id="@+id/maths1marks"
@@ -25,6 +27,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/maths1"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -34,7 +37,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/maths1marks"
       android:text="Engineering Physics"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/engphymarks"
@@ -43,6 +47,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/EngPhy"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" >
 
      
@@ -55,7 +60,9 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engphymarks"
       android:text="Engineering Chemistry"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/engchemmarks"
@@ -64,6 +71,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engchem"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -73,7 +81,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engchemmarks"
       android:text="Engineering Mechanics"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/engmechmarks"
@@ -82,6 +91,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engmech"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -91,7 +101,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/engmechmarks"
       android:text="Engineering Graphics"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/enggraphmarks"
@@ -100,6 +111,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/enggraph"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -109,7 +121,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/enggraphmarks"
       android:text="Civil Engineering"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/civilengmarks"
@@ -118,6 +131,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/civileng"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -127,7 +141,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/civilengmarks"
       android:text="Mechanical Engineering"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/mechengmarks"
@@ -136,6 +151,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/mecheng"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -145,7 +161,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/mechengmarks"
       android:text="Electrical Engineering"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/ElectricalEngmarks"
@@ -154,6 +171,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/ElectricalEng"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -163,7 +181,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/ElectricalEngmarks"
       android:text="Electronics and IT"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/ElecsITmarks"
@@ -172,6 +191,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/ElecsIT"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -181,7 +201,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/ElecsITmarks"
       android:text="Mechanical Workshop"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/mechworkmarks"
@@ -190,6 +211,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/mechwork"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <TextView
@@ -199,7 +221,8 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/mechworkmarks"
       android:text="Elec and Civil Workshop"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+       android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/elecandcivilmarks"
@@ -208,14 +231,15 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/elecandcivil"
       android:ems="10"
+      android:textColor="#FFFFFF"
       android:inputType="number" />
 
   <ImageButton
       android:id="@+id/s1s2button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignParentLeft="true"
       android:layout_below="@+id/elecandcivilmarks"
+      android:layout_centerHorizontal="true"
       android:background="@null"
       android:onClick="calculate"
       android:src="@drawable/calc" />

@@ -1,21 +1,23 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="fill_parent"
     tools:context="com.example.cgpa.S3Activity"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame"
+     android:background="@drawable/androidback" >
 
 <RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="473dp" >
+    android:layout_width="match_parent"
+    android:layout_height="664dp" >
 
     <TextView
         android:id="@+id/emII"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Engineering Maths II"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/emIImarks"
@@ -24,146 +26,161 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/emII"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+         android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/Economics"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/emIImarks"
         android:text="Economics and Comm Skills"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+         android:textColor="#FFFFFF"/>
 
     <EditText
         android:id="@+id/Economicsmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/Economics"
         android:ems="10"
-        android:inputType="number" >
+        android:inputType="number"
+         android:textColor="#FFFFFF" >
 
-        <requestFocus />
+       
     </EditText>
 
     <TextView
         android:id="@+id/PSCP"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/Economicsmarks"
         android:text="Computer Programming"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/PSCPmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/PSCP"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number" 
+         android:textColor="#FFFFFF"/>
 
     <TextView
         android:id="@+id/CO"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/PSCPmarks"
         android:text="Computer Organization"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/COmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/CO"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number" 
+         android:textColor="#FFFFFF"/>
 
     <TextView
         android:id="@+id/STLD"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/COmarks"
         android:text="Switching Theory"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/STLDmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/STLD"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+         android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/EDC"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/STLDmarks"
         android:text="Electronic Devices and Circuits"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/EDCmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/EDC"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+         android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/Programminglab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/EDCmarks"
         android:text="Programming Lab"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+         android:textColor="#FFFFFF"/>
 
     <EditText
         android:id="@+id/Programminglabmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/Programminglab"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+         android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/LogicDesignlab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/Programminglabmarks"
         android:text="Logic Design Lab"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+         android:textColor="#FFFFFF"/>
 
     <EditText
         android:id="@+id/LogicDesignlabmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/LogicDesignlab"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+         android:textColor="#FFFFFF" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/LogicDesignlabmarks"
-        android:layout_alignBottom="@+id/LogicDesignlabmarks"
-        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LogicDesignlabmarks"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
         android:onClick="calculate"
-        android:text="Calculate" />
+        android:src="@drawable/calc" />
 
 </RelativeLayout>
 </ScrollView>

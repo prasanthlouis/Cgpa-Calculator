@@ -19,6 +19,11 @@ public class MainScreen extends ActionBarActivity {
 
 	
 	}
+	public void jumpstart(View v)
+	{
+		Intent myIntent=new Intent(MainScreen.this,Sgpacalc.class);
+		startActivity(myIntent);
+	}
 	public void S8(View v)
 	{
 		Intent myIntent=new Intent(MainScreen.this,S8Activity.class);

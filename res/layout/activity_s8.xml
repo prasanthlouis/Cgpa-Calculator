@@ -4,21 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.cgpa.S8Activity"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/androidback" >
 
     <RelativeLayout
-           android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="682dp" >
+
   <TextView
         android:id="@+id/HPC"
-        android:layout_width="wrap_content"
+         android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="High Performance Computing"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
   <EditText
       android:id="@+id/HPCmarks"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/HPC"
@@ -30,7 +34,8 @@
 
   <TextView
       android:id="@+id/AI"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/HPCmarks"
@@ -39,7 +44,8 @@
 
   <EditText
       android:id="@+id/AImarks"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/AI"
@@ -48,7 +54,8 @@
 
   <TextView
       android:id="@+id/SIC"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/AImarks"
@@ -57,7 +64,8 @@
 
   <EditText
       android:id="@+id/SICmarks"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/SIC"
@@ -66,7 +74,8 @@
 
   <TextView
       android:id="@+id/elecIII"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/SICmarks"
@@ -75,7 +84,8 @@
 
   <EditText
       android:id="@+id/elecIIImarks"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/elecIII"
@@ -84,7 +94,8 @@
 
   <TextView
       android:id="@+id/elecIV"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/elecIIImarks"
@@ -93,7 +104,8 @@
 
   <EditText
       android:id="@+id/elecIVmarks"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/elecIV"
@@ -102,7 +114,8 @@
 
   <TextView
       android:id="@+id/CGlab"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/elecIVmarks"
@@ -111,7 +124,8 @@
 
   <EditText
       android:id="@+id/CGlabmarks"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/CGlab"
@@ -120,7 +134,8 @@
 
   <TextView
       android:id="@+id/MainProjectS8"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/CGlabmarks"
@@ -129,7 +144,8 @@
 
   <EditText
       android:id="@+id/MainProjectS8marks"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/MainProjectS8"
@@ -138,7 +154,8 @@
 
   <TextView
       android:id="@+id/VivaVoice"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/MainProjectS8marks"
@@ -147,21 +164,22 @@
 
   <EditText
       android:id="@+id/VivaVoicemarks"
-      android:layout_width="wrap_content"
+       android:textColor="#FFFFFF"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
-      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/VivaVoice"
       android:ems="10"
       android:inputType="number" />
 
-  <Button
+  <ImageButton
       android:id="@+id/button1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
-      android:layout_alignParentRight="true"
-      android:text="Calculate"
-      android:onClick="calculate" />
+      android:layout_below="@+id/VivaVoicemarks"
+      android:layout_centerHorizontal="true"
+      android:background="@null"
+      android:onClick="calculate"
+      android:src="@drawable/calc" />
 
 </RelativeLayout>
 </ScrollView>

@@ -1,26 +1,62 @@
 package com.example.cgpa;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
-import android.os.Build;
 
 public class S7Activity extends ActionBarActivity {
 	EditText wt,cc,cg,oomd,ppl,elecII,syspgmlab,networkinglab,sgpatext,seminar,mainproj;
+	TextView wtt,cct,cgt,oomdt,pplt,elecIIt,syspgmlabt,networkinglabt,seminart,mainprojt;
 	float sgpa,temp;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+	    getActionBar().hide();
+		Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/FARRAY.otf");
 		setContentView(R.layout.activity_s7);
+
+		wtt = (TextView) findViewById(R.id.WT);
+		cct= (TextView) findViewById(R.id.CC);
+		cgt= (TextView) findViewById(R.id.CG);
+		oomdt= (TextView) findViewById(R.id.OOMD);
+		pplt= (TextView) findViewById(R.id.PPL);
+		elecIIt= (TextView) findViewById(R.id.elecII);
+		syspgmlabt= (TextView) findViewById(R.id.syspgmlab);
+		networkinglabt= (TextView) findViewById(R.id.networklab);
+		seminart= (TextView) findViewById(R.id.seminar);
+		mainprojt= (TextView) findViewById(R.id.mainproj);
+		
+		wt=(EditText)findViewById(R.id.WTmarks);
+		cc=(EditText)findViewById(R.id.CCmarks);
+		cg=(EditText)findViewById(R.id.CGmarks);
+		oomd=(EditText)findViewById(R.id.OOMDmarks);
+		ppl=(EditText)findViewById(R.id.PPLmarks);
+		elecII=(EditText)findViewById(R.id.elecIImarks);
+		syspgmlab=(EditText)findViewById(R.id.syspgmlabmarks);
+		networkinglab=(EditText)findViewById(R.id.networklabmarks);
+		seminar=(EditText)findViewById(R.id.seminarmarks);
+		mainproj=(EditText)findViewById(R.id.mainprojmarks);
+		
+		wtt.setTypeface(tf);
+		cct.setTypeface(tf);
+		cgt.setTypeface(tf);
+		oomdt.setTypeface(tf);
+		pplt.setTypeface(tf);
+		elecIIt.setTypeface(tf);
+		syspgmlabt.setTypeface(tf);
+		networkinglabt.setTypeface(tf);
+		seminart.setTypeface(tf);
+		mainprojt.setTypeface(tf);
+		
 
 		
 	}
@@ -48,18 +84,22 @@ public class S7Activity extends ActionBarActivity {
 	
 	public void calculate(View v)
 	{
+		
+		if(wt.getText().toString().equals("") || 
+				  cc.getText().toString().equals("") || 
+				  oomd.getText().toString().equals("") ||
+				  ppl.getText().toString().equals("") || 
+				  elecII.getText().toString().equals("") ||
+				  syspgmlab.getText().toString().equals("") ||
+				  networkinglab.getText().toString().equals("") ||
+				  seminar.getText().toString().equals("") ||
+				  mainproj.getText().toString().equals(""))
+					Toast.makeText(getApplicationContext(),"Please enter all the fields", Toast.LENGTH_LONG).show();
+		else
+		{
 		Toast.makeText(getApplicationContext(), "Calculating", Toast.LENGTH_SHORT).show();
 		//sgpatext=(EditText)findViewById(R.id.sgpa);
-		wt=(EditText)findViewById(R.id.WTmarks);
-		cc=(EditText)findViewById(R.id.CCmarks);
-		cg=(EditText)findViewById(R.id.CGmarks);
-		oomd=(EditText)findViewById(R.id.OOMDmarks);
-		ppl=(EditText)findViewById(R.id.PPLmarks);
-		elecII=(EditText)findViewById(R.id.elecIImarks);
-		syspgmlab=(EditText)findViewById(R.id.syspgmlabmarks);
-		networkinglab=(EditText)findViewById(R.id.networklabmarks);
-		seminar=(EditText)findViewById(R.id.seminarmarks);
-		mainproj=(EditText)findViewById(R.id.mainprojmarks);
+		
 		temp=(4*(grade(wt)+grade(cc)+grade(elecII)))+(3*(grade(cg)+grade(oomd)+grade(ppl)))+(2*(grade(syspgmlab)+grade(networkinglab)+grade(seminar)))+(1*(grade(mainproj)));
 		sgpa=temp/28;
 	//	sgpatext.setText(sgpa+"");
@@ -68,7 +108,7 @@ public class S7Activity extends ActionBarActivity {
 		 
          //Log.d(TAG, "Sending data to status activity intent: " +data);
         
-		
+		}
 		
 	}
 	@Override

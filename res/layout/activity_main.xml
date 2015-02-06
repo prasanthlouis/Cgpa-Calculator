@@ -4,24 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     tools:context="com.example.cgpa.MainActivity"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/androidback"
+   >
 
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="507dp" >
+    android:layout_height="684dp" >
 
     <EditText
         android:id="@+id/Mathsmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/Maths"
         android:ems="10"
+          android:textColor="#FFFFFF"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/POM"
-        android:layout_width="wrap_content"
+          android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/Mathsmark"
@@ -30,8 +34,9 @@
 
     <EditText
         android:id="@+id/POMmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/POM"
         android:ems="10"
@@ -42,35 +47,39 @@
 
     <TextView
         android:id="@+id/DBMS"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+          android:textColor="#FFFFFF"
         android:layout_below="@+id/POMmark"
         android:text="Database Management Systems"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/DBMSmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+          android:textColor="#FFFFFF"
         android:layout_below="@+id/DBMS"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/DSP"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+          android:textColor="#FFFFFF"
         android:layout_below="@+id/DBMSmark"
         android:text="Digital Signal Processing"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/DSPmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/DSP"
         android:ems="10"
@@ -78,35 +87,39 @@
 
     <TextView
         android:id="@+id/OS"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+          android:textColor="#FFFFFF"
         android:layout_below="@+id/DSPmark"
         android:text="Operating Systems"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/OSmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/OS"
+          android:textColor="#FFFFFF"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/AMP"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/OSmark"
         android:text="Advanced Microprocessors"
+          android:textColor="#FFFFFF"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/AMPmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/AMP"
         android:ems="10"
@@ -114,18 +127,20 @@
 
     <TextView
         android:id="@+id/DBLab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+          android:textColor="#FFFFFF"
         android:layout_below="@+id/AMPmark"
         android:text="Database Lab"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/DBLabmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+          android:textColor="#FFFFFF"
         android:layout_below="@+id/DBLab"
         android:ems="10"
         android:inputType="number" >
@@ -135,53 +150,46 @@
 
     <TextView
         android:id="@+id/Maths"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+          android:textColor="#FFFFFF"
         android:text="Engineering Mathematics IV"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/HWMPlab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/DBLabmark"
+          android:textColor="#FFFFFF"
         android:text="HW and MP lab"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/sgpa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/HWMPlabmark"
-        android:layout_alignBottom="@+id/HWMPlabmark"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignParentRight="true"
-        android:ems="10"
-        android:inputType="number" >
-
-        <requestFocus />
-    </EditText>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/HWMPlabmark"
-        android:layout_alignParentRight="true"
-        android:onClick="calculate"
-        android:text="Submit" />
+   
 
     <EditText
         android:id="@+id/HWMPlabmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/HWMPlab"
         android:ems="10"
         android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HWMPlabmark"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:onClick="calculate"
+        android:src="@drawable/calc"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
 </ScrollView>

@@ -4,22 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.cgpa.S7Activity"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/androidback">
     
-    <RelativeLayout 
-         android:layout_width="match_parent"
-    android:layout_height="match_parent"
-        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="760dp" >
 
     <TextView
         android:id="@+id/WT"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Web Technologies"
+         android:textColor="#FFFFFF"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/WTmarks"
+         android:textColor="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -29,7 +31,8 @@
 
     <TextView
         android:id="@+id/CC"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/WTmarks"
@@ -38,20 +41,22 @@
 
     <EditText
         android:id="@+id/CCmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/CC"
         android:ems="10"
         android:inputType="number" >
 
-        <requestFocus />
+      
     </EditText>
 
     <TextView
         android:id="@+id/CG"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/CCmarks"
         android:text="Computer Graphics"
@@ -59,7 +64,8 @@
 
     <EditText
         android:id="@+id/CGmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/CG"
@@ -68,17 +74,19 @@
 
     <TextView
         android:id="@+id/OOMD"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/CGmarks"
+         android:textColor="#FFFFFF"
         android:text="Modelling Design"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/OOMDmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/OOMD"
         android:ems="10"
@@ -86,8 +94,9 @@
 
     <TextView
         android:id="@+id/PPL"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/OOMDmarks"
         android:text="Principles of Programming Languages"
@@ -95,8 +104,9 @@
 
     <EditText
         android:id="@+id/PPLmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/PPL"
         android:ems="10"
@@ -104,26 +114,29 @@
 
     <TextView
         android:id="@+id/elecII"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/PPLmarks"
         android:text="Elective II"
+         android:textColor="#FFFFFF"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/elecIImarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+         android:textColor="#FFFFFF"
         android:layout_below="@+id/elecII"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/syspgmlab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/elecIImarks"
         android:text="Systems Programming Lab"
@@ -131,17 +144,19 @@
 
     <EditText
         android:id="@+id/syspgmlabmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+         android:textColor="#FFFFFF"
         android:layout_below="@+id/syspgmlab"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/networklab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/syspgmlabmarks"
         android:text="Networking Lab"
@@ -149,7 +164,8 @@
 
     <EditText
         android:id="@+id/networklabmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/networklab"
@@ -158,8 +174,9 @@
 
     <TextView
         android:id="@+id/seminar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/networklabmarks"
         android:text="Seminar"
@@ -167,8 +184,9 @@
 
     <EditText
         android:id="@+id/seminarmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/seminar"
         android:ems="10"
@@ -176,7 +194,8 @@
 
     <TextView
         android:id="@+id/mainproj"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/seminarmarks"
@@ -185,23 +204,24 @@
 
     <EditText
         android:id="@+id/mainprojmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+         android:textColor="#FFFFFF"
         android:layout_below="@+id/mainproj"
         android:ems="10"
         android:inputType="number" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/mainprojmarks"
-        android:layout_alignBottom="@+id/mainprojmarks"
-        android:layout_marginLeft="68dp"
-        android:layout_toRightOf="@+id/syspgmlab"
-        android:text="Calculate"
-        android:onClick="calculate" />
+        android:layout_below="@+id/mainprojmarks"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        
+        android:onClick="calculate"
+        android:src="@drawable/calc" />
 
 </RelativeLayout>
 </ScrollView>

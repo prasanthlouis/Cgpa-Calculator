@@ -4,181 +4,196 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.cgpa.Sgpacalc"
-    tools:ignore="MergeRootFrame" >
-
-  <EditText
-      android:id="@+id/S5marks"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignLeft="@+id/S4marks"
-      android:layout_alignTop="@+id/S5"
-      android:ems="10"
-      android:inputType="number" />
-
-  <EditText
-      android:id="@+id/S4marks"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignBottom="@+id/S4"
-      android:layout_centerHorizontal="true"
-      android:ems="10"
-      android:inputType="number" />
-
-  <TextView
-      android:id="@+id/S1S2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentLeft="true"
-      android:layout_alignParentTop="true"
-      android:text="S1S2"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/androidback" >
 
   <EditText
       android:id="@+id/S1S2marks"
+      
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
       android:layout_alignParentTop="true"
-      android:layout_centerHorizontal="true"
       android:ems="10"
-      android:inputType="number" />
+      android:inputType="numberDecimal" />
 
   <EditText
-      android:id="@+id/S6marks"
+      android:id="@+id/CGPAmarks"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignBaseline="@+id/S6"
-      android:layout_alignBottom="@+id/S6"
-      android:layout_alignLeft="@+id/S5marks"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S8marks"
       android:ems="10"
-      android:inputType="number" >
-
-      <requestFocus />
-  </EditText>
+      android:inputType="numberDecimal" />
 
   <EditText
       android:id="@+id/S3marks"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignLeft="@+id/S4marks"
-      android:layout_alignTop="@+id/S3"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S1S2marks"
       android:ems="10"
-      android:inputType="number" />
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/S4marks"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S3marks"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/S5marks"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S4marks"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/S6marks"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S5marks"
+      android:ems="10"
+      android:inputType="numberDecimal" />
 
   <EditText
       android:id="@+id/S7marks"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignBottom="@+id/S7"
-      android:layout_toRightOf="@+id/S1S2"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S6marks"
       android:ems="10"
-      android:inputType="number" />
+      android:inputType="numberDecimal" >
+
+      
+  </EditText>
 
   <EditText
       android:id="@+id/S8marks"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignBaseline="@+id/S8"
-      android:layout_alignBottom="@+id/S8"
-      android:layout_alignLeft="@+id/S6marks"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S7marks"
       android:ems="10"
-      android:inputType="number" />
+      android:inputType="numberDecimal" />
 
   <TextView
       android:id="@+id/S3"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/S3marks"
       android:layout_alignParentLeft="true"
-      android:layout_below="@+id/S1S2marks"
-      android:layout_marginTop="20dp"
       android:text="S3"
       android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <TextView
-      android:id="@+id/S4"
+      android:id="@+id/S1S2"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_above="@+id/S3marks"
       android:layout_alignParentLeft="true"
-      android:layout_below="@+id/S3marks"
-      android:layout_marginTop="22dp"
+      android:text="S1S2"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <TextView
+      android:id="@+id/S4"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/S4marks"
+      android:layout_alignParentLeft="true"
       android:text="S4"
       android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <TextView
-      android:id="@+id/S5"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentLeft="true"
-      android:layout_below="@+id/S4"
-      android:layout_marginTop="40dp"
-      android:text="S5"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
-
-  <TextView
       android:id="@+id/S6"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/S6marks"
+      android:layout_alignBottom="@+id/S6marks"
       android:layout_alignParentLeft="true"
-      android:layout_below="@+id/S5marks"
-      android:layout_marginTop="17dp"
       android:text="S6"
       android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <TextView
       android:id="@+id/S7"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/S7marks"
+      android:layout_alignBottom="@+id/S7marks"
       android:layout_alignParentLeft="true"
-      android:layout_below="@+id/S6marks"
-      android:layout_marginTop="14dp"
       android:text="S7"
       android:textAppearance="?android:attr/textAppearanceLarge" />
 
   <TextView
       android:id="@+id/S8"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/S8marks"
+      android:layout_alignBottom="@+id/S8marks"
       android:layout_alignParentLeft="true"
-      android:layout_below="@+id/S7"
-      android:layout_marginTop="29dp"
       android:text="S8"
       android:textAppearance="?android:attr/textAppearanceLarge" />
 
-  <Button
-      android:id="@+id/button1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
-      android:layout_alignParentRight="true"
-      android:onClick="back"
-      android:text="Button" />
-
-  <Button
-      android:id="@+id/button2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
-      android:layout_centerHorizontal="true"
-      android:text="Calculate"
-      android:onClick="finalcalc" />
-
   <TextView
       android:id="@+id/Final"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_above="@+id/button2"
+      android:layout_alignBottom="@+id/CGPAmarks"
       android:layout_alignParentLeft="true"
       android:text="CGPA"
       android:textAppearance="?android:attr/textAppearanceLarge" />
 
-  <EditText
-      android:id="@+id/CGPAmarks"
+  <TextView
+      android:id="@+id/S5"
+      android:textColor="#FFFFFF"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_above="@+id/button2"
-      android:layout_marginLeft="20dp"
-      android:layout_toRightOf="@+id/Final"
-      android:ems="10"
-      android:inputType="number" />
+      android:layout_alignBaseline="@+id/S5marks"
+      android:layout_alignBottom="@+id/S5marks"
+      android:layout_alignParentLeft="true"
+      android:text="S5"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <ImageButton
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:background="@null"
+      android:onClick="back"
+      android:src="@drawable/unnamed" />
+
+  <ImageButton
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:background="@null"
+      android:onClick="finalcalc"
+      android:src="@drawable/calc" />
 
 </RelativeLayout>
 

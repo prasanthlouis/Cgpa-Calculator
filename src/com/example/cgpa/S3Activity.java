@@ -1,26 +1,54 @@
 package com.example.cgpa;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
-import android.os.Build;
 
 public class S3Activity extends ActionBarActivity {
 	EditText emII,ecskills,pscp,co,stld,edc,pgmlab,ldlab,sgpatext;
+	TextView emIIt,ecskillst,pscpt,cot,stldt,edct,pgmlabt,ldlabt;
 	float sgpa,temp;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+	    getActionBar().hide();
+		Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/FARRAY.otf");
 		setContentView(R.layout.activity_s3);
+		emIIt = (TextView) findViewById(R.id.emII);
+		ecskillst= (TextView) findViewById(R.id.Economics);
+		pscpt= (TextView) findViewById(R.id.PSCP);
+		cot= (TextView) findViewById(R.id.CO);
+		stldt= (TextView) findViewById(R.id.STLD);
+		edct= (TextView) findViewById(R.id.EDC);
+		pgmlabt= (TextView) findViewById(R.id.Programminglab);
+		ldlabt= (TextView) findViewById(R.id.LogicDesignlab);
+		
+		emIIt.setTypeface(tf);
+		ecskillst.setTypeface(tf);
+		pscpt.setTypeface(tf);
+		cot.setTypeface(tf);
+		stldt.setTypeface(tf);
+		edct.setTypeface(tf);
+		pgmlabt.setTypeface(tf);
+		ldlabt.setTypeface(tf);
+		
+		emII=(EditText)findViewById(R.id.emIImarks);
+		ecskills=(EditText)findViewById(R.id.Economicsmarks);
+		pscp=(EditText)findViewById(R.id.PSCPmarks);
+		co=(EditText)findViewById(R.id.COmarks);
+		stld=(EditText)findViewById(R.id.STLDmarks);
+		edc=(EditText)findViewById(R.id.EDCmarks);
+		pgmlab=(EditText)findViewById(R.id.Programminglabmarks);
+		ldlab=(EditText)findViewById(R.id.LogicDesignlabmarks);
 
 	
 	}
@@ -47,22 +75,28 @@ public class S3Activity extends ActionBarActivity {
 	
 	public void calculate(View v)
 	{
+
+		if(emII.getText().toString().equals("") || 
+				  ecskills.getText().toString().equals("") || 
+				  pscp.getText().toString().equals("") ||
+				  co.getText().toString().equals("") || 
+				  stld.getText().toString().equals("") ||
+				  edc.getText().toString().equals("") ||
+				  pgmlab.getText().toString().equals("") ||
+				  ldlab.getText().toString().equals(""))
+					Toast.makeText(getApplicationContext(),"Please enter all the fields", Toast.LENGTH_LONG).show();
+		else
+		{
 		Toast.makeText(getApplicationContext(), "Calculating", Toast.LENGTH_SHORT).show();
 		//sgpatext=(EditText)findViewById(R.id.sgpa);
-		emII=(EditText)findViewById(R.id.emIImarks);
-		ecskills=(EditText)findViewById(R.id.Economicsmarks);
-		pscp=(EditText)findViewById(R.id.PSCPmarks);
-		co=(EditText)findViewById(R.id.COmarks);
-		stld=(EditText)findViewById(R.id.STLDmarks);
-		edc=(EditText)findViewById(R.id.EDCmarks);
-		pgmlab=(EditText)findViewById(R.id.Programminglabmarks);
-		ldlab=(EditText)findViewById(R.id.LogicDesignlabmarks);
+		
 		temp=(4*(grade(emII)+grade(ecskills)+grade(pscp)+grade(co)+grade(stld)+grade(edc)))+2*(grade(pgmlab)+grade(ldlab));
 		sgpa=temp/28;
 		//Toast.makeText(getApplicationContext(), sgpa+"", Toast.LENGTH_SHORT).show();
 	//	sgpatext.setText(sgpa+"");
 	Intent myintent=new Intent(S3Activity.this, Sgpacalc.class).putExtra("S3marks", sgpa);
 		startActivity(myintent);
+		}
 		 
          //Log.d(TAG, "Sending data to status activity intent: " +data);
         

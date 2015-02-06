@@ -4,26 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.cgpa.S4Activity"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/androidback" >
+
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="631dp" >
+
     <TextView
         android:id="@+id/EM"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:text="Engineering Maths III"
+        android:textColor="#FFFFFF"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/EMmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/EM"
         android:ems="10"
+        android:textColor="#FFFFFF"
         android:inputType="number" >
 
         <requestFocus />
@@ -31,71 +36,79 @@
 
     <TextView
         android:id="@+id/OOP"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/EMmarks"
+        android:textColor="#FFFFFF"
         android:text="Object Oriented Programming"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/OOPmark"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/OOP"
+        android:textColor="#FFFFFF"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/DSA"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/OOPmark"
+        android:textColor="#FFFFFF"
         android:text="Data Structures and Algorithms"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/DSAmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/DSA"
+        android:textColor="#FFFFFF"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/SCS"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/DSAmarks"
+        android:textColor="#FFFFFF"
         android:text="Signals and Communication Systems"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/SCSmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
         android:layout_below="@+id/SCS"
         android:ems="10"
         android:inputType="number" />
 
     <TextView
         android:id="@+id/mp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/SCSmarks"
+        android:textColor="#FFFFFF"
         android:text="Microprocessor Systems"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/mpmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/mp"
         android:ems="10"
@@ -103,16 +116,18 @@
 
     <TextView
         android:id="@+id/TOC"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
         android:layout_below="@+id/mpmarks"
         android:text="Theory of Computation"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/TOCmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/TOC"
@@ -121,8 +136,9 @@
 
     <TextView
         android:id="@+id/DSL"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/TOCmarks"
         android:text="Data Structures Lab"
@@ -130,8 +146,9 @@
 
     <EditText
         android:id="@+id/DSLabmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/DSL"
         android:ems="10"
@@ -139,40 +156,34 @@
 
     <TextView
         android:id="@+id/EClab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/DSLabmarks"
+        android:textColor="#FFFFFF"
         android:text="Electronic Circuits Lab"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/eclabmarks"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
+           android:layout_below="@+id/EClab"
         android:ems="10"
         android:inputType="number" />
 
-    <EditText
-        android:id="@+id/sgpa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/EClab"
-        android:ems="10"
-        android:inputType="number" />
-
-    <Button
+    <ImageButton
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/EClab"
-        android:layout_alignParentRight="true"
+       
+        android:layout_below="@+id/eclabmarks"
+       android:layout_centerHorizontal="true"
+        android:background="@null"
         android:onClick="calculate"
-        android:text="Submit" />
+        android:src="@drawable/calc"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
 </ScrollView>
