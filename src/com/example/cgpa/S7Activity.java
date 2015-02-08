@@ -11,6 +11,7 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.psiuol21.cgpa.R;
 
 public class S7Activity extends ActionBarActivity {
 	EditText wt,cc,cg,oomd,ppl,elecII,syspgmlab,networkinglab,sgpatext,seminar,mainproj;
@@ -80,7 +81,25 @@ public class S7Activity extends ActionBarActivity {
 			return 0;
 		
 	}
-
+	public float specgrade(int y)
+	{
+	
+		if(y>=136)
+			return 10;
+		else if(y>=121)
+			return 9;
+		else if(y>=106)
+			return 8;
+		else if(y>=91)
+			return 7;
+		else if(y>=83)
+			return 6;
+		else if(y>=75)
+			return (float) 5.5;
+		else
+			return 0;
+		
+	}
 	
 	public void calculate(View v)
 	{
@@ -100,8 +119,9 @@ public class S7Activity extends ActionBarActivity {
 		Toast.makeText(getApplicationContext(), "Calculating", Toast.LENGTH_SHORT).show();
 		//sgpatext=(EditText)findViewById(R.id.sgpa);
 		
-		temp=(4*(grade(wt)+grade(cc)+grade(elecII)))+(3*(grade(cg)+grade(oomd)+grade(ppl)))+(2*(grade(syspgmlab)+grade(networkinglab)+grade(seminar)))+(1*(grade(mainproj)));
+		temp=(4*(grade(wt)+grade(cc)+grade(elecII)))+(3*(grade(cg)+grade(oomd)+grade(ppl)))+(2*(grade(syspgmlab)+grade(networkinglab)+specgrade(3*(Integer.parseInt(seminar.getText().toString())))))+(1*(specgrade(3*(Integer.parseInt(mainproj.getText().toString())))));
 		sgpa=temp/28;
+		
 	//	sgpatext.setText(sgpa+"");
 	Intent myintent=new Intent(S7Activity.this, Sgpacalc.class).putExtra("S7marks", sgpa);
 		startActivity(myintent);

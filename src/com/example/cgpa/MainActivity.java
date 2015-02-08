@@ -11,6 +11,7 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.psiuol21.cgpa.R;
 
 public class MainActivity extends ActionBarActivity {
 EditText em,pom,dbms,dsp,os,amp,dblab,hwmplab,sgpatext;

@@ -11,6 +11,7 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.psiuol21.cgpa.R;
 
 public class S1S2Activity extends ActionBarActivity {
 	EditText em1,engphy,engchem,engmech,enggraph,civileng,mecheng,eleceng,elecsiteng,mechwork,eleccivilwork,sgpatext;

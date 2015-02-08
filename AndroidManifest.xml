@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cgpa"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.psiuol21.cgpa"
+    android:versionCode="6"
+    android:versionName="1.5" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -54,6 +54,10 @@
         <activity
             android:name="com.example.cgpa.S8Activity"
             android:label="@string/title_activity_s8" >
+        </activity>
+        <activity
+            android:name="com.example.cgpa.DirectCGPA"
+            android:label="@string/title_activity_direct_cgp" >
         </activity>
     </application>
 

@@ -12,6 +12,7 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.psiuol21.cgpa.R;
 
 public class Sgpacalc extends ActionBarActivity {
 float s1s2mar,s3mar,s4mar,s5mar,s6mar,s7mar,s8mar;
@@ -45,13 +46,7 @@ EditText s1s2,s3,s4,s5,s6,s7,s8;
 		s8t.setTypeface(tf);
 		cgpat.setTypeface(tf);
 		
-		s1s2.setText(0.0+"");
-		s3.setText(0.0+"");
-		s4.setText(0.0+"");
-		s5.setText(0.0+"");
-		s6.setText(0.0+"");
-		s7.setText(0.0+"");
-		s8.setText(0.0+"");
+	
 		
 		Bundle extras = getIntent().getExtras();
 			

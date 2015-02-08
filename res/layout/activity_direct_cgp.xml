@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cgpa.DirectCGPA"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/androidback" >
+
+  <EditText
+      android:id="@+id/S1S2marksdup"
+      
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/CGPAmarksdup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S8marksdup"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/S3marksdup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S1S2marksdup"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/S4marksdup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S3marksdup"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/S5marksdup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S4marksdup"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/S6marksdup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S5marksdup"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/S7marksdup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S6marksdup"
+      android:ems="10"
+      android:inputType="numberDecimal" >
+
+      
+  </EditText>
+
+  <EditText
+      android:id="@+id/S8marksdup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/S7marksdup"
+      android:ems="10"
+      android:inputType="numberDecimal" />
+
+  <TextView
+      android:id="@+id/S3dup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/S3marksdup"
+      android:layout_alignParentLeft="true"
+      android:text="S3"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <TextView
+      android:id="@+id/S1S2dup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/S3marksdup"
+      android:layout_alignParentLeft="true"
+      android:text="S1S2"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <TextView
+      android:id="@+id/S4dup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/S4marksdup"
+      android:layout_alignParentLeft="true"
+      android:text="S4"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <TextView
+      android:id="@+id/S6dup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/S6marksdup"
+      android:layout_alignBottom="@+id/S6marksdup"
+      android:layout_alignParentLeft="true"
+      android:text="S6"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <TextView
+      android:id="@+id/S7dup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/S7marksdup"
+      android:layout_alignBottom="@+id/S7marksdup"
+      android:layout_alignParentLeft="true"
+      android:text="S7"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <TextView
+      android:id="@+id/S8dup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/S8marksdup"
+      android:layout_alignBottom="@+id/S8marksdup"
+      android:layout_alignParentLeft="true"
+      android:text="S8"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <TextView
+      android:id="@+id/Finaldup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/CGPAmarksdup"
+      android:layout_alignParentLeft="true"
+      android:text="CGPA"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <TextView
+      android:id="@+id/S5dup"
+      android:textColor="#FFFFFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/S5marksdup"
+      android:layout_alignBottom="@+id/S5marksdup"
+      android:layout_alignParentLeft="true"
+      android:text="S5"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  <ImageButton
+      android:id="@+id/button1dup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:background="@null"
+      android:onClick="back"
+      android:src="@drawable/unnamed" />
+
+  <ImageButton
+      android:id="@+id/button2dup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:background="@null"
+      android:onClick="finalcalc"
+      android:src="@drawable/calc" />
+
+</RelativeLayout>
+
+  
