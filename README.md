@@ -6,3 +6,5 @@ Made this just because it was annoying to use the spreadsheet calculator on my c
 Just take the apk and install.
 
 Please do notify if you notice anything wrong with the calculations.
+
+Play store link: https://play.google.com/store/apps/details?id=com.psiuol21.cgpa
